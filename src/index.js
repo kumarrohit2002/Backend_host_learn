@@ -59,5 +59,5 @@ app.listen(PORT,()=>{
 });
 
 app.get('/',(req,res)=>{
-    res.send(`<h1>This is HomePage yaar</h1>`);
+    res.send(`<h1>This is HomePage yaar for Mentor Backeend please go /getAllMentorProfiles</h1>`);
 })

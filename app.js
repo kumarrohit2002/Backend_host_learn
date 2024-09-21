@@ -7,7 +7,7 @@ const PORT=process.env.PORT || 4000;
 
 app.use(express.json());
 
-require("./config/database").connect();
+// require("./config/database").connect();
 
 app.listen(PORT,()=>{
     console.log(`listening on port no : http://localhost:${PORT}`);

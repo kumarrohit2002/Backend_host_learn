@@ -10,6 +10,7 @@ const razorpay = new Razorpay({
 
 
 
+
 exports.payment_checkout = async (req, res) => {
     try {
         const { name, amount } = req.body;

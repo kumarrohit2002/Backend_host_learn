@@ -5,6 +5,8 @@ require('dotenv').config();
 const bcrypt=require('bcryptjs');
 
 const PORT=process.env.PORT || 4000;
+let password = '123456'
+const hashPassword = bcrypt.hash(password, 10);
 
 app.use(express.json());
 

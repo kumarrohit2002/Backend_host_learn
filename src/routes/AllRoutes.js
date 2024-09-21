@@ -4,8 +4,8 @@ const {updateProfilePic} =require('../controllers/profilePicController');
 const {middleware} = require('../middleware/middleware');
 
 
-// const authRoutes=require("../routes/authRoutes");
-// router.use('/user',authRoutes);
+const authRoutes=require("../routes/authRoutes");
+router.use('/user',authRoutes);
 
 const mentorRoutes=require("../routes/mentorRoutes");
 router.use('/mentor',mentorRoutes);

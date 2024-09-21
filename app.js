@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 require('dotenv').config();
+const bcrypt=require('bcrypt');
 
 const PORT=process.env.PORT || 4000;
 

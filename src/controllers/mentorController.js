@@ -278,15 +278,22 @@ exports.postJob = async (req, res) => {
 
 exports.getAllPostJob=async(req, res)=>{
     try{
-        // const allpostedJobs=await Job.find();
+        const allpostedJobs=await Job.find();
+        if(!allpostedJobs){
+            return res.status(400).json({
+                success:false,
+                message: 'post job not present!'
+            })
+        }
+
         res.status(200).json({
             success:true,
             message: 'get all posted job successfully',
             allmentor:{
                 name:'rohit kumar',
                 reg_no:'12201517'
-            }
-            // AllPostedJob:allpostedJobs,
+            },
+            AllPostedJob:allpostedJobs,
         })
 
     }catch(error){

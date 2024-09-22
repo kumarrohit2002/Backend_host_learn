@@ -115,7 +115,7 @@ exports.getMentorProfile=async(req,res)=>{
 // Get all MentorProfiles
 exports.getAllMentorProfiles = async (req, res) => {
     try {
-        const mentorProfiles = await MentorProfile.find();
+        const mentorProfiles = await MentorProfile.find({}, 'profilePic name aboutSection skills _id');
         return res.status(200).json({
             success: true,
             AllMentor: mentorProfiles,

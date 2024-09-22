@@ -11,6 +11,6 @@ router.get('/getAllMentorProfiles',getAllMentorProfiles);
 router.post('/getprofile',getMentorProfileById);
 router.post('/searchMentor',searchMentor);
 router.post('/post-new-job',middleware,postJob);
-router.post('/get-all-job-posts',getAllPostJob);    
+router.get('/get-all-job-posts',getAllPostJob);    
 
 module.exports = router;
